@@ -6,9 +6,52 @@ import p1 from './images/p1.png';
 import p2 from './images/p2.png';
 import { useState } from 'react';
 import axios from 'axios';
-
+import $ from 'jquery';
+import { FaBeer } from 'react-icons/fa';
 
 const App = () => {
+
+    $(document).ready(function(){
+
+        $('#menu').click(function(){
+          $(this).toggleClass('fa-times');
+          $('header').toggleClass('toggle');
+        });
+      
+        $(window).on('scroll load',function(){
+      
+          $('#menu').removeClass('fa-times');
+          $('header').removeClass('toggle');
+      
+          if($(window).scrollTop() > 0){
+            $('.top').show();
+          }else{
+            $('.top').hide();
+          }
+      
+        });
+      
+        // smooth scrolling 
+      
+        $('a[href*="#"]').on('click',function(e){
+      
+          e.preventDefault();
+      
+          $('html, body').animate({
+      
+            scrollTop : $($(this).attr('href')).offset().top,
+      
+          },
+            500, 
+            'linear'
+          );
+      
+        });
+      
+      });
+
+
+    
     const[value,setValue]=useState({
         name:"",
         email:"",
@@ -29,7 +72,7 @@ const App = () => {
     return (
     <div>
     <header>
-<div className='user'>
+<div className="user">
 <img src={logo} alt='profile'/>
 <h3 className='name'>Hemnath</h3>
 <p className='post'>Front End Developer</p>
@@ -47,7 +90,7 @@ const App = () => {
 
 </header>
 
-<div id='menu'><i class="bars icon"></i></div>
+<div id='menu'><FaBeer/></div>
 
     
 
@@ -148,6 +191,7 @@ const App = () => {
 <div className='box'>
     <img src={p1} alt=''/>
 </div>
+<p>Hemnath Arts</p>
 
 <div className='box'>
     <img src={p2} alt=""/>
