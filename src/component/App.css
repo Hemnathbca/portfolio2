@@ -456,7 +456,7 @@ header .navbar ul li a:hover{
 
 @media (max-width:768px){
 
-    html{
+    react{
         font-size: 50%;
     }
  
