@@ -1,5 +1,6 @@
  import React from 'react' 
  import logo from './images/hema.jpg'; 
+ import p3 from './images/p3.png';
  import  './style.css'; 
  import scroll from './images/scroll-top.png'; 
  import p1 from './images/p1.png'; 
@@ -42,6 +43,7 @@
          <li><a href='#about'>About</a></li> 
          <li><a href='#education'>Education</a></li> 
          <li><a href='#portfolio'>Project</a></li> 
+         <li><a href=''>My Designs</a></li>
          <li><a href='#contact'>Contact</a></li> 
   
      </ul> 
@@ -148,17 +150,33 @@
  <h1 className='heading'>My <span>Project</span></h1> 
  <div className='box-container'> 
  <div className='box'> 
-    <img src={p1} alt=''/>
+    <a href=''><img src={p1} alt=''/></a>
  </div> 
  <p>Hemnath Arts</p> 
   
  <div className='box'> 
-     <img src={p2} alt="image"/> 
+    <a href='#'><img src={p2} alt="image"/></a> 
+ </div> 
+ <p>Techxtra & Dhamka</p> 
+  
+ <div className='box'> 
+    <a href='#'><img src={p3} alt="image"/></a> 
+ </div> 
+ <p>SJC Zephyr</p> 
+
  </div> 
   
- </div> 
-  
- </section> 
+ </section>
+
+ <section className='design' id='design'>
+
+    <h1 className='heading'>My<span>Designs</span></h1>
+    <div className='box-container'>
+        <div className='box'>
+            <a href=''><img src='' alt='' /></a>
+        </div>
+    </div>
+    </section> 
   
  <section className='contact' id='contact'> 
   
