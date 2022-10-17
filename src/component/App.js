@@ -114,42 +114,38 @@
      <div className='box-container'> 
          <div className='box'> 
          <i class="graduation cap icon"></i> 
-             <span>2021</span> 
+             <span>2018 - 2021</span> 
              <h3>BCA</h3> 
              <p>St.Joseph's College of Arts And Science (Autonomous) </p> 
          </div> 
-  
+
+         <div className='box'> 
+ <i class="graduation cap icon"></i> 
+     <span>2021 - Present</span> 
+     <h3>M.sc Info Tech</h3> 
+     <p>St. Joseph's College of Arts and Science (Autonomous)</p> 
+ </div> 
+
  <div className='box'> 
  <i class="graduation cap icon"></i> 
      <span>2022</span> 
-     <h3>front end developer</h3> 
-     <p>free lenser</p> 
+     <h3>Front End Developer</h3> 
+     <p>Free Lanser</p> 
  </div> 
   
  <div className='box'> 
  <i class="graduation cap icon"></i> 
      <span>2022</span> 
-     <h3>front end developer</h3> 
-     <p>free lenser</p> 
+     <h3>UI & UX</h3> 
+     <p>Free Lanser</p> 
  </div> 
  <div className='box'> 
  <i class="graduation cap icon"></i> 
      <span>2022</span> 
-     <h3>front end developer</h3> 
-     <p>free lenser</p> 
+     <h3>Graphic Design</h3> 
+     <p>Free Lanser</p> 
  </div> 
- <div className='box'> 
- <i class="graduation cap icon"></i> 
-     <span>2022</span> 
-     <h3>front end developer</h3> 
-     <p>free lenser</p> 
- </div> 
- <div className='box'> 
- <i class="graduation cap icon"></i> 
-     <span>2022</span> 
-     <h3>front end developer</h3> 
-     <p>free lenser</p> 
- </div> 
+ 
      </div> 
  </section> 
   
