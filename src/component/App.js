@@ -10,6 +10,8 @@
  import { FaBars} from 'react-icons/fa'; 
   
  const Hema = () => { 
+
+    
      const[toggle,setToggle]=useState(false)
 
      const[value,setValue]=useState({ 
@@ -29,6 +31,7 @@
      } 
   
      } 
+
      return ( 
      <div> 
      <header className={toggle?"toggle":"toggle-move"} id='tog' style={{top:'0',position:'fixed'}}> 
@@ -72,7 +75,12 @@
          <h3><span>qualification:</span>BCA</h3> 
          <h3><span>post:</span>Front end developer</h3> 
          <h3><span>language:</span>English, tamil</h3> 
-         <a href='#'><button className='btn'>Download CV <i class="download icon"></i></button> </a> 
+         <a href='https://drive.google.com/file/d/1b58q-owNhTUsV4J4I_75ggEX_NGfZ7g0/view?usp=sharing' target='_blank'>
+            <button className='btn'>
+                Download CV 
+                <i class="download icon"></i>
+                </button>
+                 </a> 
      </div> 
      <div className='counter'> 
          <div className='box'> 
@@ -150,17 +158,17 @@
  <h1 className='heading'>My <span>Project</span></h1> 
  <div className='box-container'> 
  <div className='box'> 
-    <a href=''><img src={p1} alt=''/></a>
+    <a href='#'><img src={p1} alt=''/></a>
  </div> 
  <p>Hemnath Arts</p> 
   
  <div className='box'> 
-    <a href='#'><img src={p2} alt="image"/></a> 
+    <a href='http://techdhamaka22.epizy.com/?i-1' target='_blank'><img src={p2} alt="image"/></a> 
  </div> 
  <p>Techxtra & Dhamka</p> 
   
  <div className='box'> 
-    <a href='#'><img src={p3} alt="image"/></a> 
+    <a href='http://zephyrsjc.epizy.com' target='_blank'><img src={p3} alt="image"/></a> 
  </div> 
  <p>SJC Zephyr</p> 
 
@@ -170,7 +178,7 @@
 
  <section className='design' id='design'>
 
-    <h1 className='heading'>My<span>Designs</span></h1>
+    <h1 className='heading'>My<span>Skills</span></h1>
     <div className='box-container'>
         <div className='box'>
             <a href=''><img src='' alt='' /></a>
@@ -209,6 +217,7 @@
  </div> 
   
      ); 
- } 
+ }
+
   
  export default Hema;
