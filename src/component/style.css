@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
  :root {
-    --yellow: #f9ca24;
+    --yellow: #07c9ff;
 }
 
 * {
@@ -100,7 +100,7 @@ header .user img {
     width: 17rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: -3rem;
+    margin-bottom: -2rem;
     border: .7rem solid var(--yellow);
 }
 
@@ -297,6 +297,136 @@ header .navbar ul li a:hover {
     background: var(--yellow);
 }
 
+#skill{
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    margin-bottom: 70px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 15px;
+
+}
+
+.skill-main .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.skill-bar .info .percent{
+    font-weight: bold;
+}
+
+.skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background-color: rgb(250, 244, 244);
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #07c9ff;
+    border-radius: 25px;
+
+}
+
+.skill-bar .bar .html{
+    width: 85%;
+    animation: html 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0;
+    } 100%{
+        width: 85%;
+    }
+}
+
+.skill-bar .bar .css{
+    width: 75%;
+    animation: css 3s;
+}
+
+@keyframes css{
+    0%{
+        width: 0;
+    } 100%{
+        width: 55%;
+    }
+}
+
+.skill-bar .bar .js{
+    width: 50%;
+    animation: js 3s;
+}
+
+@keyframes js{
+    0%{
+        width: 0;
+    } 100%{
+        width: 90%;
+    }
+}
+
+.skill-bar .bar .bootstrap{
+    width: 60%;
+    animation: bootstrap 3s;
+}
+
+@keyframes bootstrap{
+    0%{
+        width: 0;
+    } 100%{
+        width: 60%;
+    }
+}
+
+.skill-bar .bar .react{
+    width: 50%;
+    animation: react 3s;
+}
+
+@keyframes react{
+    0%{
+        width: 0;
+    } 100%{
+        width: 50%;
+    }
+}
+
+.skill-bar .bar .adobe{
+    width: 95%;
+    animation: adobe 3s;
+}
+
+@keyframes adobe{
+    0%{
+        width: 0;
+    } 100%{
+        width: 95%;
+    }
+}
+
+
 .portfolio .box-container {
     display: flex;
     align-items: center;
@@ -325,7 +455,7 @@ header .navbar ul li a:hover {
 }
 
 .portfolio .box-container p {
-    color: #f9ca24;
+    color: #07c9ff;
     position: relative;
     font-size: 2rem;
     top: 1rem;
@@ -391,6 +521,24 @@ header .navbar ul li a:hover {
     padding-right: 1rem;
     color: var(--yellow);
 }
+
+.contact .row .socialmedia h2 a{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0 1rem;
+    font-weight: normal;
+}
+
+.contact .row .socialmedia h2 a i{
+    padding-right: 1rem;
+    color: orange;
+}
+
+.scroll a img{
+    color: var(--yellow);
+}
+
 
 .top {
     position: fixed;
@@ -460,6 +608,7 @@ header .navbar ul li a:hover {
         margin: 3rem 0;
     }
 }
+
 
 .container {
     position: absolute;

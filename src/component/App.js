@@ -7,7 +7,7 @@
  import p2 from './images/p2.png'; 
  import { useState } from 'react'; 
  import axios from 'axios';
- import { FaBars} from 'react-icons/fa'; 
+ import { FaBars,FaWhatsapp} from 'react-icons/fa'; 
   
  const Hema = () => { 
 
@@ -25,7 +25,7 @@
          try{ 
          const {data} = await axios.post("http://localhost:7000/api/user",{ 
          ...value, 
-         }) 
+         }).then(res=>console.log(res))
      }catch(err){ 
          console.log(err); 
      } 
@@ -46,7 +46,7 @@
          <li><a href='#about'>About</a></li> 
          <li><a href='#education'>Education</a></li> 
          <li><a href='#portfolio'>Project</a></li> 
-         <li><a href=''>My Designs</a></li>
+         <li><a href='#skill'>Skills</a></li>
          <li><a href='#contact'>Contact</a></li> 
   
      </ul> 
@@ -172,14 +172,74 @@
   
  </section>
 
- <section className='design' id='design'>
+ <section className='skill' id='skill'>
+ <h1 className='heading'>My <span>Skills</span></h1> 
+<div className='header skill-head'>
 
-    <h1 className='heading'>My<span>Skills</span></h1>
-    <div className='box-container'>
-        <div className='box'>
-            <a href=''><img src='' alt='' /></a>
+    <p>Here is my skill to represent my Expertise</p>
+</div>
+<div className='skill-main'>
+    <div className='skill-bar'>
+        <div className='info'>
+            <p>Html</p>
+            <p className='percent'>85%</p>
+        </div>
+        <div className='bar'>
+            <span className='html'></span>
         </div>
     </div>
+
+    <div className='skill-bar'>
+        <div className='info'>
+            <p>Css</p>
+            <p className='percent'>75%</p>
+        </div>
+        <div className='bar'>
+            <span className='css'></span>
+        </div>
+    </div>
+
+    <div className='skill-bar'>
+        <div className='info'>
+            <p>Javascript</p>
+            <p className='percent'>50%</p>
+        </div>
+        <div className='bar'>
+            <span className='js'></span>
+        </div>
+    </div>
+
+    <div className='skill-bar'>
+        <div className='info'>
+            <p>Bootstrap</p>
+            <p className='percent'>60%</p>
+        </div>
+        <div className='bar'>
+            <span className='bootstrap'></span>
+        </div>
+    </div>
+
+    <div className='skill-bar'>
+        <div className='info'>
+            <p>Reactjs</p>
+            <p className='percent'>50%</p>
+        </div>
+        <div className='bar'>
+            <span className='react'></span>
+        </div>
+    </div>
+
+    <div className='skill-bar'>
+        <div className='info'>
+            <p>Adobe</p>
+            <p className='percent'>95%</p>
+        </div>
+        <div className='bar'>
+            <span className='adobe'></span>
+        </div>
+    </div>
+
+</div>
     </section> 
   
  <section className='contact' id='contact'> 
@@ -190,11 +250,16 @@
              <h3 className='title'> Contact Info </h3> 
              <div className='info'> 
                  <h3><i class="envelope icon"></i> hemnathfed@gmail.com</h3> 
-                 <h3><i class="phone icon"></i> +916382735981</h3> 
-                 <h3><i class="phone icon"></i>+917397050284</h3> 
+                 <h3><i class="phone icon"></i> +91 6382735981</h3> 
+                 <h3><i class="whatsapp icon"></i>+91 7397050284</h3>
                  <h3><i class="map marker alternate icon"></i> No.54, Mariyamman kovil st, Vanamadevi, Cuddalore - 607 105. </h3> 
+              
+                 
+
                  </div>  
          </div> 
+
+         
   
  <form action=''> 
      <input type="text" placeholder='name' name='name' className='box' onChange={(e)=>setValue({...value,[e.target.name]:e.target.value})}/> 
@@ -203,17 +268,31 @@
      <textarea name='message' id='' cols='30' row='10'  className='box message' placeholder='message' onChange={(e)=>setValue({...value,[e.target.name]:e.target.value})}/> 
      <button type='submit' className='btn' onClick={handler}>send <i class="paper plane icon"></i></button> 
  </form> 
-  
+      
+ <div className='socialmedia'>
+      <h2><a href='https://www.linkedin.com/in/hemnath-arivazhagan-29a2551b8/'><i class="linkedin icon"></i></a></h2>
+      <h2><a href='https://github.com/Hemnathbca' target='_blank'><i class="github icon"></i></a></h2>
+      <h2><a href='https://www.facebook.com/profile.php?id=100086405317532' target='_blank'><i class="facebook icon"></i></a></h2>
+      <h2><a href=''><i class="twitter icon"></i></a></h2>
+      <h2><a href='https://www.instagram.com/hemnath_fed/' target='_blank'><i class="instagram icon"></i></a></h2>
+      </div>
+
      </div> 
  </section> 
- <a href='#home' className='top'> 
-     <img src={scroll} alt='image'/> 
+ <div className='scroll'>
+     <a href='#home' className='top'> 
+     <img src={scroll} alt=''/>
  </a> 
+ </div>
+
+
   
  </div> 
+ 
   
      ); 
  }
 
+ 
   
  export default Hema;
