@@ -270,11 +270,13 @@
  </form> 
       
  <div className='socialmedia'>
-      <h2><a href='https://www.linkedin.com/in/hemnath-arivazhagan-29a2551b8/'><i class="linkedin icon"></i></a></h2>
-      <h2><a href='https://github.com/Hemnathbca' target='_blank'><i class="github icon"></i></a></h2>
+      <h2><a></a></h2>
       <h2><a href='https://www.facebook.com/profile.php?id=100086405317532' target='_blank'><i class="facebook icon"></i></a></h2>
       <h2><a href=''><i class="twitter icon"></i></a></h2>
       <h2><a href='https://www.instagram.com/hemnath_fed/' target='_blank'><i class="instagram icon"></i></a></h2>
+      <h2><a href='https://www.linkedin.com/in/hemnath-arivazhagan-29a2551b8/'><i class="linkedin icon"></i></a></h2>
+      <h2><a href='https://github.com/Hemnathbca' target='_blank'><i class="github icon"></i></a></h2>
+
       </div>
 
      </div> 
