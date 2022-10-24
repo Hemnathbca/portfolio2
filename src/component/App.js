@@ -5,6 +5,9 @@
  import scroll from './images/scroll-top.png'; 
  import p1 from './images/p1.png'; 
  import p2 from './images/p2.png'; 
+ import blogs1 from './images/blogs1.jpg';
+ import blogs2 from './images/blogs2.jpeg';
+ import blogs4 from './images/blogs4.jpg';
  import { useState } from 'react'; 
  import axios from 'axios';
  import { FaBars,FaWhatsapp} from 'react-icons/fa'; 
@@ -37,7 +40,7 @@
      <header className={toggle?"toggle":"toggle-move"} id='tog' style={{top:'0',position:'fixed'}}> 
  <div className="user"> 
  <img src={logo} alt='profile'/> 
- <h3 className='name'>Hemnath</h3> 
+ <h3 className='name'>Hemnath A</h3> 
  <p className='post'>Front End Developer</p> 
  </div> 
  <nav className='navbar'> 
@@ -47,6 +50,7 @@
          <li><a href='#education'>Education</a></li> 
          <li><a href='#portfolio'>Project</a></li> 
          <li><a href='#skill'>Skills</a></li>
+         <li><a href='#blogs'>blogs</a></li>
          <li><a href='#contact'>Contact</a></li> 
   
      </ul> 
@@ -71,7 +75,7 @@
  <div className='row'> 
      <div className='info'> 
          <h3><span>name:</span>Hemnath</h3> 
-         <h3><span>age:</span>20</h3> 
+         <h3><span>age:</span>22</h3> 
          <h3><span>qualification:</span>BCA</h3> 
          <h3><span>post:</span>Front end developer</h3> 
          <h3><span>language:</span>English, tamil</h3> 
@@ -241,6 +245,54 @@
 
 </div>
     </section> 
+
+    <section className='blog' id='blogs'>
+    <h1 className='heading'><span>My</span>Blogs</h1> 
+       
+    <div className='blog-container'>
+  
+  <div className="blog-box">
+
+    <div className="blog-img">
+      <img src={blogs1} />
+    </div>
+    <div className="blog-text">
+      <span>18 July 2021 / Web Design</span>
+      <a href="#" className="blog-title">What Has Happened to All of the Web Design Ideas?</a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+      <a href="#">Read More</a>
+    </div>
+</div>
+
+<div className="blog-box">
+
+    <div className="blog-img">
+      <img src={blogs2} />
+    </div>
+    <div className="blog-text">
+      <span>18 July 2021 / Web Design</span>
+      <a href="#" className="blog-title">What Has Happened to All of the Web Design Ideas?</a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+      <a href="#">Read More</a>
+    </div>
+</div>
+
+<div className="blog-box">
+
+    <div className="blog-img">
+      <img src={blogs4} />
+    </div>
+    <div className="blog-text">
+      <span>18 July 2021 / Web Design</span>
+      <a href="#" className="blog-title">What Has Happened to All of the Web Design Ideas?</a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
+      <a href="#">Read More</a>
+    </div>
+</div>
+
+  </div>
+
+    </section>
   
  <section className='contact' id='contact'> 
   
