@@ -194,6 +194,15 @@ header .navbar ul li a:hover {
     }
 }
 
+.home img{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 40rem;
+    top: 22rem;
+}
+
+
 .about .row {
     display: flex;
     align-items: center;
@@ -582,6 +591,8 @@ header .navbar ul li a:hover {
 
 .socialmedia{
     width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 .socialmedia h2 a{
     position: relative;
@@ -598,17 +609,41 @@ padding-right: -0rem;
 color: var(--yellow);
 }
 
-.scroll a img{
-    color: var(--yellow);
+.scroll h1{
+    position: relative;
+    bottom: -2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
 }
 
+.scroll h2{
+    font-family: 'Open Sans Condensed';
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 
-.top {
-    position: fixed;
-    bottom: 7.5rem;
-    right: 2rem;
-    z-index: 100;
-    display: none;
+.scroll h2 img{
+    height: 50px;
+    width: 50px;
+}
+
+.scroll h2:hover{
+    background-color: rgba(44, 44, 203, 0.062);
 }
 
 

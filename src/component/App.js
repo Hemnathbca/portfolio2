@@ -5,12 +5,13 @@
  import scroll from './images/scroll-top.png'; 
  import p1 from './images/p1.png'; 
  import p2 from './images/p2.png'; 
- import blogs1 from './images/blogs1.jpg';
- import blogs2 from './images/blogs2.jpeg';
- import blogs4 from './images/blogs4.jpg';
+ import blogs1 from './images/frent.png';
+ import blogs2 from './images/ui.jpg';
+ import blogs4 from './images/adobe.png';
  import { useState } from 'react'; 
+ import profile from './images/hem.png';
  import axios from 'axios';
- import { FaBars,FaWhatsapp} from 'react-icons/fa'; 
+ import { FaBars,} from 'react-icons/fa'; 
   
  const Hema = () => { 
 
@@ -68,6 +69,8 @@
      <h1>I'M <span>Hemnath</span></h1> 
      <p>Front End Developer</p> 
      <a href='#about'><button className='btn'>About me <i class="user icon"></i></button></a> 
+
+
  </section> 
   
  <section className='about' id='about'> 
@@ -257,10 +260,16 @@
       <img src={blogs1} />
     </div>
     <div className="blog-text">
-      <span>18 July 2021 / Web Design</span>
-      <a href="#" className="blog-title">What Has Happened to All of the Web Design Ideas?</a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-      <a href="#">Read More</a>
+      <span>18 July 2021 / Frent End Developer</span>
+      <a href="#" className="blog-title">What Has Happened to Front End Developer Ideas?</a>
+      <p>The main responsibility of a Front-End Developer is the User interface.
+
+Simply put, create things that the user sees.
+
+The difference between Front-End and Back-End is that Front-End refers to how a web page looks, while back-end refers to how it works.
+
+You also think of Front-End as client-side and Back-End as server-side.</p>
+      <a href="https://www.w3schools.com/howto/howto_blog_become_frontenddev.asp" target='_blank'>Read More</a>
     </div>
 </div>
 
@@ -270,10 +279,14 @@
       <img src={blogs2} />
     </div>
     <div className="blog-text">
-      <span>18 July 2021 / Web Design</span>
-      <a href="#" className="blog-title">What Has Happened to All of the Web Design Ideas?</a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-      <a href="#">Read More</a>
+      <span>18 July 2021 / UI UX Design</span>
+      <a href="#" className="blog-title">What Has Happened to UI UX Ideas?</a>
+      <p>A UI, UX, and front-end web developer is responsible for applying interactive and 
+        visual design principles on websites and web applications for a positive and cohesive user experience.
+         These developers use HTML, CSS, and other design tools to achieve responsive designs. UI, UX, 
+         and front-end developers are often assisted by back-end web developers,
+         who are responsible for server-side application integration and logic.</p>
+      <a href="https://www.toptal.com/ui-ux-frontend/job-description#:~:text=A%20UI%2C%20UX%2C%20and%20front,tools%20to%20achieve%20responsive%20designs." target='_blank'>Read More</a>
     </div>
 </div>
 
@@ -283,10 +296,18 @@
       <img src={blogs4} />
     </div>
     <div className="blog-text">
-      <span>18 July 2021 / Web Design</span>
+      <span>18 July 2021 / Adobe Photoshop</span>
       <a href="#" className="blog-title">What Has Happened to All of the Web Design Ideas?</a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-      <a href="#">Read More</a>
+      <p>Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS.
+         It was originally created in 1988 by Thomas and John Knoll. Since then, the software has become the industry standard not only in 
+         raster graphics editing, but in digital art as a whole. The software's name is often colloquially used as a verb
+          (e.g. "to photoshop an image", "photoshopping", and "photoshop contest")[5] although Adobe discourages such use.[6] 
+          Photoshop can edit and compose raster images in multiple layers and supports masks, alpha compositing and several color 
+          models including RGB, CMYK, CIELAB, spot color, and duotone. Photoshop uses its own PSD and PSB file formats to support 
+          these features. In addition to raster graphics, Photoshop has limited abilities to edit or render text and vector graphics
+           (especially through clipping path for the latter), as well as 3D graphics and video. Its feature set can be expanded by plug-ins; 
+        programs developed and distributed independently of Photoshop that run inside it and offer new or enhanced features.</p>
+      <a href="https://en.wikipedia.org/wiki/Adobe_Photoshop" target='_blank'>Read More</a>
     </div>
 </div>
 
@@ -321,23 +342,29 @@
      <button type='submit' className='btn' onClick={handler}>send <i class="paper plane icon"></i></button> 
  </form> 
       
- <div className='socialmedia'>
+ 
+
+ <div className='socialmedia' id='social'>
       <h2><a></a></h2>
       <h2><a href='https://www.facebook.com/profile.php?id=100086405317532' target='_blank'><i class="facebook icon"></i></a></h2>
-      <h2><a href='https://twitter.com/Hemnath_Fed'><i class="twitter icon"></i></a></h2>
+      <h2><a href='https://twitter.com/Hemnath_Fed' target='_blank'><i class="twitter icon"></i></a></h2>
       <h2><a href='https://www.instagram.com/hemnath_fed/' target='_blank'><i class="instagram icon"></i></a></h2>
       <h2><a href='https://www.linkedin.com/in/hemnath-arivazhagan-29a2551b8/'><i class="linkedin icon"></i></a></h2>
       <h2><a href='https://github.com/Hemnathbca' target='_blank'><i class="github icon"></i></a></h2>
-
       </div>
-
+      <br/>
+      <div className='scroll'>
+ <h1>That's all
+        <a href="#home">
+            <h2>
+                <img src={scroll}/>- scroll up-
+        </h2>
+        </a>
+    </h1>
+ </div>
      </div> 
  </section> 
- <div className='scroll'>
-     <a href='#home' className='top'> 
-     <img src={scroll} alt=''/>
- </a> 
- </div>
+ 
 
 
   
