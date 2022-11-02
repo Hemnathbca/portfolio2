@@ -667,6 +667,15 @@ color: var(--yellow);
     .portfolio .box-container .box {
         width: 100%;
     }
+
+.skill .header skill-head .skill-main .skill-bar{
+    width: 100%;
+} 
+
+.blog .blog-container .blog-box{
+    width: 100%;
+}
+
     .contact .row form {
         margin: 3rem 0;
     }
