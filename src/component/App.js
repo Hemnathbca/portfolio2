@@ -5,6 +5,8 @@
  import scroll from './images/scroll-top.png'; 
  import p1 from './images/p1.png'; 
  import p2 from './images/p2.png'; 
+ import p4 from './images/p4.png';
+ import p5 from './images/p5.png';
  import blogs1 from './images/frent.png';
  import blogs2 from './images/ui.jpg';
  import blogs4 from './images/adobe.png';
@@ -174,6 +176,16 @@
     <a href='http://zephyrsjc.epizy.com' target='_blank'><img src={p3} alt="image"/></a> 
  </div> 
  <p>SJC Zephyr</p> 
+
+ <div className='box'> 
+    <a href='https://breezycafe.000webhostapp.com' target='_blank'><img src={p4} alt="image"/></a> 
+ </div> 
+ <p>Breezy Cafe</p> 
+
+ <div className='box'> 
+    <a href='https://scholership2.000webhostapp.com/' target='_blank'><img src={p5} alt="image"/></a> 
+ </div> 
+ <p>Scholarship</p> 
 
  </div> 
   
